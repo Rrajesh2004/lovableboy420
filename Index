@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAJESH ART - Photo & Video Gallery</title>
+    <style>
+        /* CSS for Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .photo-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .photo-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .photo-header strong {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        /* --- STYLES FOR IMAGE AND VIDEO --- */
+        .media-content {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .photo-caption {
+            font-size: 1em;
+            color: #555;
+            padding-top: 5px;
+            border-top: 2px solid #007bff; /* Highlight for the command */
+            margin-top: 10px;
+            padding-left: 5px;
+        }
+
+        .photo-number {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #007bff; /* Blue color for the number */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>📸 RAJESH ART Gallery</h1>
+    <p>Website Owner: **RAJESH ART**</p>
+    
+    <div class="gallery-container">
+        
+        <div class="photo-item">
+            <div class="photo-header">
+                <span class="photo-number">1</span>
+                <strong>Image Name 1 (1 s)</strong>
+            </div>
+            <img src="image1.jpg" alt="First uploaded image" class="media-content">
+            <div class="photo-caption">
+                **COMMAND:** BIKE MY LOIVE
+            </div>
+        </div>
+
+
+        <div class="photo-item">
+            <div class="photo-header">
+                <span class="photo-number">3</span>
+                <strong>Video Name 3 (0:15 s)</strong>
+            </div>
+            <video controls class="media-content">
+                <source src="my_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="photo-caption">
+                **COMMAND:** Watch the action unfold!
+            </div>
+  
+        </div>
+
+        </div>
+
+</body>
+</html>
